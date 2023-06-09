@@ -21,4 +21,4 @@ jobs:
             ls 
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag kubelearning:$(date +%s)
+        run: docker build . --file dockerfile --tag kubelearning:$(date +%s)
