@@ -20,6 +20,12 @@ jobs:
         run: |
             ls 
 
+      - name: Docker Login
+        uses: docker/login-action@v2
+        with:
+          username: rmanohar86
+          password: Calyptus86
+          
       - name: Build the Docker image
         run: docker build . --file dockerfile -t rmanohar86/kubelearning
       
