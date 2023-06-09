@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "x2WqMkhIJhI1yrEWnRkw40kHFWAOqZjjK/h6unFrtKI=",
+  "Source": "HelloDocker2",
+  "BasePath": "_content/HelloDocker2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
