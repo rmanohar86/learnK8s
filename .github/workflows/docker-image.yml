@@ -24,4 +24,4 @@ jobs:
         run: docker build . --file dockerfile --tag kubelearning:$(date +%s)
       
       - name: Push the Docker image
-        run : docker push
+        run : docker push rmanohar86/kubelearning:$(date +%s)
