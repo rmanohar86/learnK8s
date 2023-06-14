@@ -33,7 +33,7 @@ jobs:
 #        run : docker push rmanohar86/kubelearning
       - name: build image
         run: |
-          docker-compose -f /containers/docker-compose.yml build
+          docker-compose -f Containers/docker-compose.yml build
       
       - name: push image
         run : |
