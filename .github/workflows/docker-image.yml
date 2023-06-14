@@ -26,8 +26,15 @@ jobs:
           username: rmanohar86
           password: Calyptus86
           
-      - name: Build the Docker image
-        run: docker build . --file dockerfile -t rmanohar86/kubelearning
+#      - name: Build the Docker image
+#        run: docker build . --file dockerfile -t rmanohar86/kubelearning
       
-      - name: Push the Docker image
-        run : docker push rmanohar86/kubelearning
+#      - name: Push the Docker image
+#        run : docker push rmanohar86/kubelearning
+      - name: build image
+        run: |
+          docker-compose -f /containers/docker-compose.yml build
+      
+      - name: push image
+        run : |
+          docker-compose push
