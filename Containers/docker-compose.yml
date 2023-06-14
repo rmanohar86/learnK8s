@@ -1,0 +1,13 @@
+version: "3"
+services:
+    hellodocker:build:
+        container_name: hellodockercontainer
+        image: hellodockercontainer:latest
+        restart: unless-stopped
+        build:
+            context: ./
+            dockerfile: dockerfile
+networks:
+  default:
+    external:
+      name: nat
